@@ -1,0 +1,112 @@
+Bakersfield,Los Angeles,111.59
+Bakersfield,Thousand Oaks,117.02
+Bakersfield,Tracy,227.65
+Bakersfield,Ventura,119.5
+Bakersfield,Visalia,73.7
+Berkeley,Oakland,4.97
+Berkeley,Richmond,8.1
+Chico,Red Bluff,42.57
+Chico,Roseville,83.48
+Chico,Sacramento,89.84
+Daly City,San Francisco,7.38
+Daly City,San Mateo,13.22
+Fairfield,Vacaville,9.83
+Fremont,Hayward,13.3
+Fremont,Livermore,19.56
+Fremont,Pleasanton,14.34
+Fremont,San Jose,17.27
+Fresno,Merced,56.5
+Fresno,Visalia,43.96
+Hayward,Fremont,13.3
+Hayward,Oakland,15.78
+Hayward,Pleasanton,15.88
+Hayward,San Mateo,17.21
+Livermore,Fremont,19.56
+Livermore,Pleasanton,6.3
+Livermore,Tracy,20.1
+Los Angeles,Bakersfield,111.59
+Los Angeles,San Diego,120.36
+Los Angeles,Thousand Oaks,39.57
+Los Angeles,Tracy,326.2
+Merced,Fresno,56.5
+Merced,Modesto,38.73
+Modesto,Merced,38.73
+Modesto,Stockton,31.67
+Modesto,Tracy,29.67
+Napa,Santa Rosa,37.72
+Napa,Vallejo,14.12
+Oakland,Berkeley,4.97
+Oakland,Hayward,15.78
+Oakland,San Francisco,11.27
+Pleasanton,Fremont,14.34
+Pleasanton,Hayward,15.88
+Pleasanton,Livermore,6.3
+Pleasanton,San Jose,25.91
+Red Bluff,Chico,42.57
+Red Bluff,Redding,31.14
+Red Bluff,Sacramento,130.43
+Red Bluff,Vacaville,132.05
+Redding,Red Bluff,31.14
+Redding,Weed,69.19
+Redwood City,San Jose,23.03
+Redwood City,San Mateo,8.54
+Richmond,Berkeley,8.1
+Richmond,San Rafael,11.94
+Richmond,Vallejo,16.44
+Roseville,Chico,83.48
+Roseville,Sacramento,18.45
+Sacramento,Chico,89.84
+Sacramento,Red Bluff,130.43
+Sacramento,Roseville,18.45
+Sacramento,Stockton,48.89
+Sacramento,Vacaville,32.99
+Salinas,San Jose,58.12
+Salinas,San Luis Obispo,125.81
+San Diego,Los Angeles,120.36
+San Francisco,Daly City,7.38
+San Francisco,Oakland,11.27
+San Francisco,San Rafael,18.73
+San Jose,Fremont,17.27
+San Jose,Pleasanton,25.91
+San Jose,Redwood City,23.03
+San Jose,Salinas,58.12
+San Luis Obispo,Salinas,125.81
+San Luis Obispo,Santa Barbara,93.84
+San Mateo,Daly City,13.22
+San Mateo,Hayward,17.21
+San Mateo,Redwood City,8.54
+San Rafael,Richmond,11.94
+San Rafael,San Francisco,18.73
+San Rafael,Santa Rosa,37.5
+Santa Barbara,San Luis Obispo,93.84
+Santa Barbara,Ventura,27.7
+Santa Rosa,Napa,37.72
+Santa Rosa,San Rafael,37.5
+Stockton,Modesto,31.67
+Stockton,Sacramento,48.89
+Stockton,Tracy,20.53
+Thousand Oaks,Bakersfield,117.02
+Thousand Oaks,Los Angeles,39.57
+Thousand Oaks,Tracy,331.63
+Thousand Oaks,Ventura,28.87
+Tracy,Bakersfield,227.65
+Tracy,Livermore,20.1
+Tracy,Los Angeles,326.2
+Tracy,Modesto,29.67
+Tracy,Stockton,20.53
+Tracy,Thousand Oaks,331.63
+Tracy,Ventura,334.12
+Vacaville,Fairfield,9.83
+Vacaville,Red Bluff,132.05
+Vacaville,Sacramento,32.99
+Vallejo,Napa,14.12
+Vallejo,Richmond,16.44
+Ventura,Bakersfield,119.5
+Ventura,Santa Barbara,27.7
+Ventura,Thousand Oaks,28.87
+Ventura,Tracy,334.12
+Visalia,Bakersfield,73.7
+Visalia,Fresno,43.96
+Weed,Redding,69.19
+Weed,Yreka,28.29
+Yreka,Weed,28.29
