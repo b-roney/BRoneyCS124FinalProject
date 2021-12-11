@@ -38,12 +38,17 @@ public class Graph {
     }
 
     public void listAllCities(){
-        String [] cityNames = cityMap.keySet().toArray(new String[0]);
-        Arrays.sort(cityNames);
+       String [] cityNames = getSortedCities();
         for(String cityName : cityNames){
             System.out.println(cityName);
         }
 
+    }
+
+    public String[] getSortedCities(){
+        String [] cityNames = cityMap.keySet().toArray(new String[0]);
+        Arrays.sort(cityNames);
+        return cityNames;
     }
 
 
