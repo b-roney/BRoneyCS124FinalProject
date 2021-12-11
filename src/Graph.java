@@ -29,7 +29,7 @@ public class Graph {
     public void addEdge(String cityA, String cityB, int distance) {
         //Get cityA GraphNode
         GraphNode nodeA = getNode(cityA);
-        //Add edge to cityB
+        //Add edge to cityB okay
         nodeA.addEdge(cityB, distance);
     }
 

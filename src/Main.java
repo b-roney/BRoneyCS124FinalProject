@@ -24,7 +24,7 @@ public class Main {
 
 //                System.out.println("City A: " + data[0]);
 //                System.out.println("City B: " + data[1]);
-//                System.out.println("Distance: " + data[2]);
+//                System.out.println("Distance: " + data[2]); okay
             }
             graph.listAllCities();
             input.close();

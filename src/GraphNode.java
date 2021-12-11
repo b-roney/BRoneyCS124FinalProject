@@ -12,7 +12,7 @@ public class GraphNode {
     }
     // Alternative to using a map for the edges:
     // private ArrayList<GraphNode> neighbors;
-    // private ArrayList<Integer> distances;
+    // private ArrayList<Integer> distances; okay
 
     void addEdge(String otherNode, int distance) {
         //Get the node for the destination city
