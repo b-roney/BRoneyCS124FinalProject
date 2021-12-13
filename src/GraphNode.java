@@ -14,9 +14,17 @@ public class GraphNode {
     // private ArrayList<GraphNode> neighbors;
     // private ArrayList<Integer> distances; okay
 
-    void addEdge(GraphNode otherNode, int distance) {
+    public void addEdge(GraphNode otherNode, int distance) {
         //Adds the distance between the start and destination cities
         outboundEdges.put(otherNode, distance);
+    }
+
+    public void displayCityInfo(){
+        for(GraphNode node : outboundEdges.keySet()){
+            String cityName = node.location;
+            int distance = outboundEdges.get(node);
+            System.out.println(cityName + ", " + distance);
+        }
     }
 
 }

@@ -29,7 +29,9 @@ public class Main {
 //                System.out.println("Distance: " + data[2]); okay
             }
             //graph.listAllCities();
-            graph.listMatchingCities("San");
+            //graph.listMatchingCities("San");
+            //graph.displayCityInfo("Oakland");
+            graph.displayCityInfo("Okland");
             input.close();
         } catch (FileNotFoundException e) {
             System.out.print("*** File could not be opened.");

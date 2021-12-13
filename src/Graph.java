@@ -10,8 +10,10 @@ public class Graph {
     }
     // methods
     public void addNode(String cityName) {
-        GraphNode node = new GraphNode(cityName);
-        cityMap.put(cityName, node);
+        if(!cityMap.containsKey(cityName)) {
+            GraphNode node = new GraphNode(cityName);
+            cityMap.put(cityName, node);
+        }
     }
 
     public GraphNode getNode(String cityName){
@@ -60,6 +62,15 @@ public class Graph {
             if(cityName.contains(target)){
                 System.out.println(cityName);
             }
+        }
+    }
+
+    public void displayCityInfo(String target){
+        if(!cityMap.containsKey(target)){
+            System.out.print("Map does not contain " + target +".");
+        } else {
+            GraphNode node = getNode(target);
+            node.displayCityInfo();
         }
     }
 
