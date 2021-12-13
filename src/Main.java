@@ -20,6 +20,8 @@ public class Main {
                 String cityA = data[0];
                 String cityB = data[1];
                 int distance = (int) Double.parseDouble(data[2]);
+                graph.addNode(cityA);
+                graph.addNode(cityB);
                 graph.addEdge(cityA, cityB, distance);
 
 //                System.out.println("City A: " + data[0]);

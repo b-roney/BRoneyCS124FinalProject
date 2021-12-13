@@ -21,16 +21,18 @@ public class Graph {
             return cityMap.get(cityName);
         } else {
             //If false, create node and add the city to the map
-            addNode(cityName);
+            return null;
         }
-        return cityMap.get(cityName);
     }
 
     public void addEdge(String cityA, String cityB, int distance) {
         //Get cityA GraphNode
         GraphNode nodeA = getNode(cityA);
+        GraphNode nodeB = getNode(cityB);
         //Add edge to cityB okay
-        nodeA.addEdge(cityB, distance);
+        nodeA.addEdge(nodeB, distance);
+        nodeB.addEdge(nodeA, distance);
+
     }
 
     public void findPath(String start, String end) {
@@ -44,6 +46,7 @@ public class Graph {
         }
 
     }
+
 
     public String[] getSortedCities(){
         String [] cityNames = cityMap.keySet().toArray(new String[0]);
