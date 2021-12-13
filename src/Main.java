@@ -28,7 +28,8 @@ public class Main {
 //                System.out.println("City B: " + data[1]);
 //                System.out.println("Distance: " + data[2]); okay
             }
-            graph.listAllCities();
+            //graph.listAllCities();
+            graph.listMatchingCities("San");
             input.close();
         } catch (FileNotFoundException e) {
             System.out.print("*** File could not be opened.");

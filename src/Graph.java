@@ -54,5 +54,14 @@ public class Graph {
         return cityNames;
     }
 
+    public void listMatchingCities(String target){
+        String [] cityNames = getSortedCities();
+        for(String cityName : cityNames){
+            if(cityName.contains(target)){
+                System.out.println(cityName);
+            }
+        }
+    }
+
 
 }
