@@ -28,13 +28,17 @@ public class Graph {
     }
 
     public void addEdge(String cityA, String cityB, int distance) {
-        //Get cityA GraphNode
-        GraphNode nodeA = getNode(cityA);
-        GraphNode nodeB = getNode(cityB);
-        //Add edge to cityB okay
-        nodeA.addEdge(nodeB, distance);
-        nodeB.addEdge(nodeA, distance);
 
+        if(!cityMap.containsKey(cityA) || !cityMap.containsKey(cityB)) {
+            System.out.println("One of the cities is not in the map.");
+        } else {
+            GraphNode nodeA = getNode(cityA);
+            GraphNode nodeB = getNode(cityB);
+
+            //Add edge to cityB okay
+            nodeA.addEdge(nodeB, distance);
+            nodeB.addEdge(nodeA, distance);
+        }
     }
 
     public void findPath(String start, String end) {
