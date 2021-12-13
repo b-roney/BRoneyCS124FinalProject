@@ -47,6 +47,7 @@ public class Main {
             System.out.println("C. Display city information");
             System.out.println("D. Add new city");
             System.out.println("E. Add/Update link");
+            System.out.println("Q. Quit");
             System.out.println("Choose from the menu above.");
             String userInput = scanner.nextLine().toUpperCase();
             if(userInput.equals("A")){
@@ -75,6 +76,9 @@ public class Main {
                 System.out.println("Enter distance:");
                 int distance = scanner.nextInt();
                 graph.addEdge(start, end, distance);
+            }
+            if(userInput.equals("Q")){
+                break;
             }
 
         }
