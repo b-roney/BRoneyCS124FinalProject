@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -42,7 +43,15 @@ public class Graph {
     }
 
     public void findPath(String start, String end) {
-
+        HashMap<String, Integer> distanceTable = new HashMap<>();
+        String currentLocation = start;
+        Path currentPath = new Path(currentLocation);
+        ArrayList<Path> pathQueue = new ArrayList<Path>();
+        while(!currentLocation.equals(end)){
+            if(!distanceTable.containsKey(currentLocation)){
+                distanceTable.put(currentLocation, currentPath.getLength());
+            }
+        }
     }
 
     public void listAllCities(){

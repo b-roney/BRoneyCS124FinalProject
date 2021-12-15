@@ -20,7 +20,8 @@ public class GraphNode {
     }
 
     public void displayCityInfo(){
-        for(GraphNode node : outboundEdges.keySet()){
+        GraphNode [] adjNodes = outboundEdges.keySet().toArray(new GraphNode[0]);
+        for(GraphNode node : adjNodes){
             String cityName = node.location;
             int distance = outboundEdges.get(node);
             System.out.println(cityName + ", " + distance);
