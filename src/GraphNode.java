@@ -34,7 +34,7 @@ public class GraphNode {
        return outboundEdges;
     }
 
-    public java.lang.String getLocation(){
+    public String getLocation(){
         return location;
     }
 
