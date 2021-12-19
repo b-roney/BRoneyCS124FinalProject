@@ -50,17 +50,18 @@ public class Graph {
         while(!currentLocation.equals(end)){
             if(!distanceTable.containsKey(currentLocation)){
                 distanceTable.put(currentLocation, currentPath.getLength());
-                GraphNode[] adjCities = getNode(currentLocation).getAdjNodes();
-                for(int i = 0; i < adjCities.length; i++){
+                HashMap<GraphNode, Integer> adjEdgeInfo = getNode(currentLocation).getOutboundEdges();
+                for(GraphNode key : adjEdgeInfo.keySet()){
                     Path path = new Path(currentPath);
-                    path.addCity(adjCities[i], );
-                        pathQueue.add(adjCities[i]);
-                    }
+                    path.addCity(key.getLocation(), adjEdgeInfo.get(key));
+                        pathQueue.add(path);
+
+
                 }
-                //
             }
         }
     }
+
 
     public void listAllCities(){
        String [] cityNames = getSortedCities();

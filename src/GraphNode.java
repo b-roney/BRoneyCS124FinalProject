@@ -1,5 +1,7 @@
 
 
+import com.sun.org.apache.xpath.internal.operations.String;
+
 import java.util.HashMap;
 
 public class GraphNode {
@@ -28,9 +30,12 @@ public class GraphNode {
         }
     }
 
-    public GraphNode[] getAdjNodes(){
-       GraphNode [] adjNodes = outboundEdges.keySet().toArray(new GraphNode[0]);
-       return adjNodes;
+    public HashMap<GraphNode, Integer> getOutboundEdges(){
+       return outboundEdges;
+    }
+
+    public java.lang.String getLocation(){
+        return location;
     }
 
 }
