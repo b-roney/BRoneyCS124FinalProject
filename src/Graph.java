@@ -50,6 +50,8 @@ public class Graph {
         while(!currentLocation.equals(end)){
             if(!distanceTable.containsKey(currentLocation)){
                 distanceTable.put(currentLocation, currentPath.getLength());
+                Path path = new Path(start);
+                //if(!pathQueue.contains())
             }
         }
     }

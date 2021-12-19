@@ -10,6 +10,14 @@ public class Path {
         pathCities.add(startCity);
     }
 
+    public Path(Path otherPath) {
+        length = otherPath.length;
+        pathCities = new ArrayList<String>();
+        for(int i = 0; i < otherPath.length; i++){
+            pathCities.set(i, otherPath.pathCities.get(i));
+        }
+    }
+
     // methods
     public void addCity(String city, int distance) {
         // add node to the end,
