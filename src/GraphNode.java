@@ -28,4 +28,9 @@ public class GraphNode {
         }
     }
 
+    public GraphNode[] getAdjNodes(){
+       GraphNode [] adjNodes = outboundEdges.keySet().toArray(new GraphNode[0]);
+       return adjNodes;
+    }
+
 }

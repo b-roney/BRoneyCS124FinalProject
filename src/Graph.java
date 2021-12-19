@@ -50,8 +50,14 @@ public class Graph {
         while(!currentLocation.equals(end)){
             if(!distanceTable.containsKey(currentLocation)){
                 distanceTable.put(currentLocation, currentPath.getLength());
-                Path path = new Path(start);
-                //if(!pathQueue.contains())
+                GraphNode[] adjCities = getNode(currentLocation).getAdjNodes();
+                for(int i = 0; i < adjCities.length; i++){
+                    Path path = new Path(currentPath);
+                    path.addCity(adjCities[i], );
+                        pathQueue.add(adjCities[i]);
+                    }
+                }
+                //
             }
         }
     }
