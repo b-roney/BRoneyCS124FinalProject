@@ -58,14 +58,15 @@ public class Graph {
                         pathQueue.add(path);
                     }
                 }
-                int currentIndex = 0;
-                int currentLength = 0;
+                int minIndex = 0;
                 for(int i = 1; i < pathQueue.size(); i++){
-                    if(pathQueue.get(i).getLength() < pathQueue.get(currentIndex).getLength()){
-                        currentIndex = i;
-                        currentLength = pathQueue.get(currentIndex).getLength();
+                    if(pathQueue.get(i).getLength() < pathQueue.get(minIndex).getLength()){
+                        minIndex = i;
                     }
                 }
+                currentPath = pathQueue.get(minIndex);
+                pathQueue.remove(minIndex);
+                currentLocation = currentPath.getLastCity();
             }
         }
     }
