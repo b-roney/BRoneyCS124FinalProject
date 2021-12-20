@@ -54,9 +54,7 @@ public class Graph {
                 for (GraphNode key : adjEdgeInfo.keySet()) {
                     Path path = new Path(currentPath);
                     path.addCity(key.getLocation(), adjEdgeInfo.get(key));
-                    if (!pathQueue.contains(path)) {
-                        pathQueue.add(path);
-                    }
+                    pathQueue.add(path);
                 }
             }
                 int minIndex = 0;
