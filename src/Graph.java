@@ -47,27 +47,27 @@ public class Graph {
         String currentLocation = start;
         Path currentPath = new Path(currentLocation);
         ArrayList<Path> pathQueue = new ArrayList<Path>();
-        while(!currentLocation.equals(end)){
-            if(!distanceTable.containsKey(currentLocation)){
+        while (!currentLocation.equals(end)) {
+            if (!distanceTable.containsKey(currentLocation)) {
                 distanceTable.put(currentLocation, currentPath.getLength());
                 HashMap<GraphNode, Integer> adjEdgeInfo = getNode(currentLocation).getOutboundEdges();
-                for(GraphNode key : adjEdgeInfo.keySet()){
+                for (GraphNode key : adjEdgeInfo.keySet()) {
                     Path path = new Path(currentPath);
                     path.addCity(key.getLocation(), adjEdgeInfo.get(key));
-                    if(!pathQueue.contains(path)) {
+                    if (!pathQueue.contains(path)) {
                         pathQueue.add(path);
                     }
                 }
+            }
                 int minIndex = 0;
-                for(int i = 1; i < pathQueue.size(); i++){
-                    if(pathQueue.get(i).getLength() < pathQueue.get(minIndex).getLength()){
+                for (int i = 1; i < pathQueue.size(); i++) {
+                    if (pathQueue.get(i).getLength() < pathQueue.get(minIndex).getLength()) {
                         minIndex = i;
                     }
                 }
                 currentPath = pathQueue.get(minIndex);
                 pathQueue.remove(minIndex);
                 currentLocation = currentPath.getLastCity();
-            }
         }
     }
 

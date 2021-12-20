@@ -34,7 +34,7 @@ public class Main {
             //graph.listMatchingCities("San");
             //graph.displayCityInfo("Oakland");
             //graph.displayCityInfo("Okland");
-            graph.findPath("Oakland", "Berkeley");
+           graph.findPath("Oakland", "Berkeley");
             input.close();
         } catch (FileNotFoundException e) {
             System.out.print("*** File could not be opened.");
