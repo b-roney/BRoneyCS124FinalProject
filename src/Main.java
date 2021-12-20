@@ -35,7 +35,7 @@ public class Main {
             //graph.displayCityInfo("Oakland");
             //graph.displayCityInfo("Okland");
             //graph.findPath("Oakland", "Berkeley");
-            input.close();
+            //input.close();
         } catch (FileNotFoundException e) {
             System.out.print("*** File could not be opened.");
             return;
