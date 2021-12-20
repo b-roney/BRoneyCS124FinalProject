@@ -33,4 +33,8 @@ public class Path {
     public int getLength(){
         return length;
     }
+
+    public void printPath(){
+        System.out.println(String.join("->", pathCities) + ", " + length);
+    }
 }

@@ -69,6 +69,7 @@ public class Graph {
                 pathQueue.remove(minIndex);
                 currentLocation = currentPath.getLastCity();
         }
+        currentPath.printPath();
     }
 
 
