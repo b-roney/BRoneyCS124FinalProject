@@ -52,9 +52,11 @@ public class Graph {
                 distanceTable.put(currentLocation, currentPath.getLength());
                 HashMap<GraphNode, Integer> adjEdgeInfo = getNode(currentLocation).getOutboundEdges();
                 for (GraphNode key : adjEdgeInfo.keySet()) {
-                    Path path = new Path(currentPath);
-                    path.addCity(key.getLocation(), adjEdgeInfo.get(key));
-                    pathQueue.add(path);
+                    if(!distanceTable.containsKey(key.getLocation())){
+                        Path path = new Path(currentPath);
+                        path.addCity(key.getLocation(), adjEdgeInfo.get(key));
+                        pathQueue.add(path);
+                    }
                 }
             }
                 int minIndex = 0;
