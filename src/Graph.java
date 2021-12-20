@@ -54,9 +54,17 @@ public class Graph {
                 for(GraphNode key : adjEdgeInfo.keySet()){
                     Path path = new Path(currentPath);
                     path.addCity(key.getLocation(), adjEdgeInfo.get(key));
+                    if(!pathQueue.contains(path)) {
                         pathQueue.add(path);
-
-
+                    }
+                }
+                int currentIndex = 0;
+                int currentLength = 0;
+                for(int i = 1; i < pathQueue.size(); i++){
+                    if(pathQueue.get(i).getLength() < pathQueue.get(currentIndex).getLength()){
+                        currentIndex = i;
+                        currentLength = pathQueue.get(currentIndex).getLength();
+                    }
                 }
             }
         }
