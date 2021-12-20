@@ -13,8 +13,8 @@ public class Path {
     public Path(Path otherPath) {
         length = otherPath.length;
         pathCities = new ArrayList<String>();
-        for(int i = 0; i < otherPath.length; i++){
-            pathCities.set(i, otherPath.pathCities.get(i));
+        for(int i = 0; i < otherPath.pathCities.size(); i++){
+            pathCities.add(i, otherPath.pathCities.get(i));
         }
     }
 
